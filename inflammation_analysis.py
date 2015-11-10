@@ -10,12 +10,15 @@ axes2 = fig.add_subplot(1,3,2)
 axes3 = fig.add_subplot(1,3,3)
 
 axes1.set_ylabel('average')
+axes1.set_xlabel('day')
 axes1.plot(data.mean(axis=0))
 
 axes2.set_ylabel('max')
+axes2.set_xlabel('day')
 axes2.plot(data.max(axis=0))
 
 axes3.set_ylabel('min')
+axes3.set_xlabel('day')
 axes3.plot(data.min(axis=0))
 
 fig.tight_layout()
